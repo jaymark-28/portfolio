@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Poppins', sans-serif; 
+            background-color: #1a1a1a; 
+            color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+        .content-wrapper {
+            flex: 1;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: black; 
+            color: white;
+            padding: 35px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600; 
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3498db; 
+        }
+
+        .projects-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .projects-section h2 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .projects-section p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #3498db;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td {
+            background-color: #444;
+            color: #ccc;
+        }
+
+
+        .project-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: #f0f0f0;
+            padding: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about me.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="project.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="projects-section">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've worked on. These projects reflect my skills in web development, programming, and engineering simulations.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Action</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grade Calculator</td>
+                        <td>A web-based application for calculating overall grades based on different weighted components.</td>
+                        <td><img src="cal.png" alt="Grade Calculator" class="project-image"></td>
+                        <td><a href="grade-calculator.html" class="btn">View Project</a></td> <!-- Added Button -->
+                    </tr>
+                    <tr>
+                        <td>Circuit Simulation</td>
+                        <td>A tool for designing and simulating electrical circuits to understand current flow and voltage distribution.</td>
+                        <td><img src="circuit.png" alt="Circuit Simulation" class="project-image"></td>
+                        <td><a href="circuit-simulation.html" class="btn">View Project</a></td> <!-- Added Button -->
+                    </tr>
+                  
+                    <tr>
+                        <td>Web Portfolio</td>
+                        <td>A personal portfolio website showcasing my skills, projects, and achievements in web development.</td>
+                        <td><img src="port.png" alt="Web Portfolio" class="project-image"></td>
+                        <td><a href="web-portfolio.html" class="btn">View Project</a></td> <!-- Added Button -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jaymark Francisco | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
